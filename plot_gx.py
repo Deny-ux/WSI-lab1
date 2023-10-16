@@ -11,9 +11,6 @@ def get_gx(x1: Union[int, float], x2: Union[int, float]):
  """
  return 5 * (np.e **2) - 4*np.e*x1 + x1**2 + 2*np.e*x2 + x2**2
 
-
-
-
 def plot_surface_gx(axes, start_x: Union[int, float], end_x: Union[int, float], number_point_x: int, start_y: Union[int, float], end_y: Union[int, float], number_point_y: int):
  x = np.linspace(start_x, end_x, number_point_x)
  y = np.linspace(start_y, end_y, number_point_y)
@@ -34,6 +31,3 @@ def plot_surface_gx_with_minimum(axes, start_x: Union[int, float], end_x: Union[
  scatter_min = axes.scatter(min_x1, min_x2, min_z, color="red", linewidth=4, label="found minimum")
  scatter_init = axes.scatter(init_x1, init_x2, init_z, color="green", linewidth=4, label="init point")
  axes.legend(handles=[scatter_init, scatter_min], loc="upper left")
-
-
-
