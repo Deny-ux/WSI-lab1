@@ -1,7 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from gradient_descent import gradient_descent_fx
-from save_plot_data_to_file import save_plot
+from save_plot_data_to_file import save_function_data
+from test_data import data_array_fx
 def get_fx(x):
  return np.sin(np.pi * x) + x**2
 
@@ -10,135 +11,12 @@ x = np.linspace(-6, 6, 2000)
 
 y = get_fx(x)
 
-
-dataArray = [
- {
- "init_value": -6,
- "learn_rate": 0.02,
- },
- {
-  "init_value": -6,
-  "learn_rate": 0.1,
- },
- {
-  "init_value": -6,
-  "learn_rate": 0.01,
- },
-  {
-  "init_value": -6,
-  "learn_rate": 0.01,
- },
-  {
-  "init_value": -6,
-  "learn_rate": 0.01,
- },
-  {
-  "init_value": -4,
-  "learn_rate": 0.01,
- },
-  {
-  "init_value": -4,
-  "learn_rate": 0.01,
- },
-  {
-  "init_value": -4,
-  "learn_rate": 0.01,
- },
-  {
-  "init_value": -4,
-  "learn_rate": 0.01,
- },
-  {
-  "init_value": -4,
-  "learn_rate": 0.01,
- },
-  {
-  "init_value": -2,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": -2,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": -2,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": -2,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": -2,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 0,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 0,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 0,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 0,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 0,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 0.77,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 0.77,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 0.77,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 0.77,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 0.77,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 2,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 2,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 2,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 2,
-  "learn_rate": 0.01,
- },
- {
-  "init_value": 2,
-  "learn_rate": 0.01,
- },
-]
-for data_entry in dataArray:
+for data_entry in data_array_fx:
  data_entry["found_min"] = gradient_descent_fx(data_entry["init_value"], data_entry["learn_rate"], 1000)
 
-save_plot(1, dataArray)
+save_function_data(1, data_array_fx)
 
-for data_entry in dataArray:
+for data_entry in data_array_fx:
  pass
  # print(data_entry["init_value"])
  # print(data_entry["learn_rate"])
