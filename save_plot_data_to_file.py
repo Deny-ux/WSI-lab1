@@ -2,6 +2,10 @@ from typing import Sequence
 import csv
 
 def save_function_data(function_number: int, data_dict: Sequence):
+    """
+    If function_number == 1 then you should provide data for f(x)\n
+    If function_number == 2 then you should provide data for g(x)
+    """
     file_name = ""
     if function_number == 1:
         file_name = "result_fx.csv"
