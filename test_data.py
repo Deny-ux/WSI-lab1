@@ -1,3 +1,9 @@
+##############################################
+#
+# Author: Denys Fokashchuk, 323944 
+#
+##############################################
+
 data_array_gx = [
  {
   "start_x1": -6,
@@ -77,7 +83,7 @@ data_array_gx = [
  {
   "start_x1": 10,
   "start_x2": 0,
-  "learn_rate": 3
+  "learn_rate": 1.2
  },
  {
   "start_x1": 400,
@@ -230,7 +236,7 @@ data_array_fx = [
  },
  {
   "init_value": 0.77,
-  "learn_rate": 1.4
+  "learn_rate": 1.1
  },
  {
   "init_value": 2,

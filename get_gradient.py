@@ -1,3 +1,9 @@
+##############################################
+#
+# Author: Denys Fokashchuk, 323944 
+#
+##############################################
+
 import numpy as np
 from typing import Union
 
@@ -15,7 +21,6 @@ def get_gradient_gx(point: np.ndarray) -> np.ndarray:
  """
  if point.shape != (2,):
   raise TypeError("Only ndarray with shape \"2,\" can represent a point for function g(x)!")
-
  x1 = point[0]
  x2 = point[1]
  return np.array([2 * (x1 - 2 * np.e), 2 * (x2 + np.e)])

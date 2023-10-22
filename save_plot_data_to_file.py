@@ -1,3 +1,9 @@
+##############################################
+#
+# Author: Denys Fokashchuk, 323944 
+#
+##############################################
+
 from typing import Sequence
 import csv
 
