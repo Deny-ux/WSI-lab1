@@ -24,6 +24,6 @@ learn_rate = 0.1
 values = gradient_descent_fx(init_x, learn_rate)
 
 # plot_fx(-5, 5, 500)
-plot_fx_with_every_minimum(-5, 5, 500, values, learn_rate)
-# plot_fx_with_minimum(-5, 5, 500, init_x, learn_rate, values[-1])
+# plot_fx_with_every_minimum(-5, 5, 500, values, learn_rate)
+plot_fx_with_minimum(-5, 5, 500, init_x, learn_rate, values[-1])
 plt.show()

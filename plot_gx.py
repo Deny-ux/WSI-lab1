@@ -6,10 +6,7 @@
 
 
 import matplotlib.pyplot as plt
-from gradient_descent import gradient_descent_gx
 import numpy as np
-from test_data import data_array_gx
-from save_plot_data_to_file import save_function_data
 from typing import Union, List
 
 title = r'g(x)=5$e^{2}$ - 4e$x_1$ + $x_{1}^{2}$ + 2e$x_2$ + $x_{2}^{2}$'
@@ -73,10 +70,6 @@ def plot_contour_gx_with_every_minimum(X: np.ndarray, Y: np.ndarray, Z: np.ndarr
 	plot_contour_gx(X, Y, Z, radius)
 	values_x1 = [value[0] for value in values]
 	values_x2 = [value[1] for value in values]
-
-	# plt.scatter(min_x1, min_x2, label="found min", c="orange")
-	
-	# plt.plot(values_x1, values_x2, 'ro', linestyle="solid", label="gradient descent")
 	plt.plot(values_x1, values_x2, 'o--', color="orange", linestyle="--", ms=4,label="gradient descent")
 	plt.plot(values_x1[-1], values_x2[-1], marker='o', color="red", ls='none', ms=7, label="found min")
 	plt.plot(values_x1[0], values_x2[0], marker='*', color="green", ls='none', ms=10, label="starting point")

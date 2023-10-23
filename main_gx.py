@@ -37,7 +37,6 @@ found_minimum = found_minimums[-1]
 
 # plot_contour_gx_with_minimum(X, Y, Z, 25, init_x1, init_x2, found_minimum[0], found_minimum[1])
 
-# plot_contour_gx_with_every_minimum(X, Y, Z, 25, found_minimums)
 plot_contour_gx_with_every_minimum(X, Y, Z, 30, found_minimums, learn_rate)
 
 # ax = plt.axes(projection="3d")
